@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DataDriven">
+  <test thread-count="5" name="POM">
+    <classes>
+      <class name="driverFactory.TestScript"/>
+    </classes>
+  </test>
+    <test thread-count="5" name="DataDrivenLogin">
+    <classes>
+      <class name="driverFactory.DriverScript"/>
+    </classes>
+  </test>
+    <test thread-count="5" name="POMDataDriven">
+    <classes>
+      <class name="driverFactory.DriverScriptPOM"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
